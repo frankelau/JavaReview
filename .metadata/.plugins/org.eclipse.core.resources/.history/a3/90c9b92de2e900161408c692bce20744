@@ -1,0 +1,55 @@
+#Methods1 {
+	width: 900px;
+	padding-bottom: 20px;
+}
+
+#Methods1 dl {
+	margin: 20px 0 0 20px;
+	float: left;
+	background: green;
+	padding-bottom: 20px;
+}
+
+#Methods1 dt {
+	width: 180px;
+	margin: 10px;
+	height: 120px;
+	background: #FFF;
+}
+
+#Methods1 dd {
+	width: 180px;
+	margin: 0 0 10PX 10px;
+	height: 30px;
+	line-height: 30PX;
+	text-align: center;
+}
+
+#Methods2 {
+	width: 900px;
+	padding-bottom: 20px;
+}
+
+#Methods2 dl {
+	width:350px;
+	height:170px;
+	padding:20px;
+	margin-left: 20px;
+	float: left;
+	background: white;
+background}
+
+#Methods2 dt {
+	width: 180px;
+	margin: 10px;
+	height: 120px;
+	background: #FFF;
+}
+
+#Methods2 dd {
+	width: 180px;
+	margin: 0 0 10PX 10px;
+	height: 30px;
+	line-height: 30PX;
+	text-align: center;
+}

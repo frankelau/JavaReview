@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/day01/src/main/java/cn/com/franke/collections/Demo1.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/day01/src/main/java/cn/com/franke/collections/Demo2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/day01/src/main/java/cn/com/franke/introspector/Demo1.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/day01/src/main/java/cn/com/franke/introspector/Demo2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/day01/src/main/java/cn/com/franke/introspector/Demo3.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/day01/src/main/java/cn/com/franke/introspector/Emp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/day01/src/main/java/cn/com/franke/introspector/Person.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/day01/src/main/java/cn/com/franke/io/Demo1.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/day01/src/main/java/cn/com/franke/path/DBUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/day01/src/main/java/cn/com/franke/path/Demo1.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/day01/src/main/java/cn/com/genecity/Demo1.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/day01/src/main/resources/obj.txt" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

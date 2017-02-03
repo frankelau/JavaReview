@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>我的主页</title>
+<link rel="shortcut icon" href="//app.gomein.net.cn/favicon.ico"
+	type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../css/index.css"></link>
+</head>
+<body style="background: #C7EDCC;">
+	<hr />
+	<span style="color: red">1.标题h1-h6逐渐变小，自带换行</span>
+	<h1>1</h1>
+	<h2>2</h2>
+	<h3>3</h3>
+	<h4>4</h4>
+	<h5>5</h5>
+	<h6>6</h6>
+	<hr />
+	<span style="color: red">2.段落p标签，自动换行</span>
+	<p>这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话。</p>
+	<hr />
+	<span style="color: red">3.上下标(sup和sub) </span>
+	<br />
+	<br />
+	<span>X<sup>2</sup>&nbsp;*&nbsp;Y<sup>2</sup>=100,求满足条件的所有X和Y的整数值？
+	</span>
+	<hr />
+	<span style="color: red">4.原样输出pre标签 </span>
+	<pre>
+		  望庐山瀑布
+		    李白
+		日照香炉生紫烟，
+		遥看瀑布挂前川。
+		飞流直下三千尺，
+		疑是银河落九天。
+	</pre>
+	<hr />
+	<span style="color: red">5.有序列表ol li </span>
+	<ol>
+		<li>一</li>
+		<li>二</li>
+		<li>三</li>
+	</ol>
+	<hr />
+	<span style="color: red">6.无序列表ul li </span>
+	<ul>
+		<li>一</li>
+		<li>二</li>
+		<li>三</li>
+	</ul>
+	<a name="mark">我</a>
+	<br />
+	<hr />
+	<span style="color: red">7.项目列表标签(dl dt dd) </span>
+	<div id="Methods1">
+		<dl>
+			<dt>
+				<a href="http://www.baidu.com">商品名称</a>
+			</dt>
+			<dd>别克昂科威</dd>
+		</dl>
+	</div>
+	<hr />
+	<span style="color: red;">8.行内标签(span) </span>
+	<br />
+	<span style="color: blue;">this is a span</span>
+	<hr />
+	<span style="color: red">9.块标签(div) </span>
+	<div
+		style="background-color: green; width: 100px; height: 100px; margin-top: 0px; margin-left: 0px;">
+		<span>第一块</span>
+	</div>
+	<div
+		style="background: blue; width: 100px; height: 100px; margin-top: -100px; margin-left: 110px">
+		<span>第二块</span>
+	</div>
+	<hr />
+	<span style="color: red">10.字符实体 </span>
+	<br />
+	<table border="6">
+		<caption>字符</caption>
+		<tr>
+			<th>显示结果</th>
+			<th>描述</th>
+			<th>实体名称</th>
+			<th>实体编号</th>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>空格</td>
+			<td>&amp;nbsp;</td>
+			<td>&amp;#160;</td>
+		</tr>
+	</table>
+	<span>&lt; &gt; &quot; &apos; &amp;</span>
+	<hr />
+	<span style="color: red">11.html多媒体 </span>
+	<br />
+	<embed src="../file/Kalimba.mp3">
+	<br />
+	<div>
+		<marquee direction="up" behavior="scroll" scrollamount="1"
+			scrolldelay="0" loop="-1" width="1000" height="50" bgcolor="#0099FF"
+			hspace="10" vspace="10"> 指整个Marquee对齐方式;
+			(2)behavior:设置滚动的方式: scroll:表示由一端滚动到另一端,会重复,缺陷是不能无缝滚动。
+			slide:表示由一段滚动到另一端,不会重复... </marquee>
+	</div>
+	<hr />
+	<span style="color: red">12.HTML链接和图像 </span>
+	<br /> 跳转：
+	<a href="../index.jsp" target="_blank">进入首页</a>
+	<br /> 邮件：
+	<a href="mailto:lxzyolo@163.com">@联系我</a>
+	<br /> 定位：
+	<a href="#mark">找到我</a>
+	<br />
+	<img src="../image/qq.PNG" align="middle" border="3" alt="图片说明文字"
+		usemap="#Map" />
+	<map name="Map">
+		<area shape="rect" coords=" " href="1.html" />
+		<area shape="circle" coords="118,203,40" href="2.html" />
+	</map>
+	<hr />
+	<span style="color: red">13.HTML框架标签 </span>
+	<br /> 画中画
+	<iframe src="1.html" width="100%"> </iframe>
+	<br /> 框架标签
+	<a href="frame.html">框架标签测试</a>
+
+	<hr />
+	<span style="color: red">14.HTML表单 </span>
+	<br />
+	表单，在网页中主要负责数据采集的功能，比如你可以采集访问者的名字和e－mail地址、调查表、留言簿等等。
+	组成
+	<form action="test.do" method="POST">
+	常见的表单域
+	文本字段：
+	     <input type="text" name="textname" value="" /> <br/>
+	密码字段：  
+		<input type="password" name="pswd" value="" /><br/> 
+	单选按钮 ：<br/>
+	     天<input type="radio" name="radioname" /><br/>
+	     地<input type="radio" name="radioname" /><br/>
+	     人<input type="radio" name="radioname" /><br/>
+	      单选按钮必需要分组，分组的方法就是给标签name属性，name属性的值必须一样。<br/>
+	多选按钮 ：    <br/>
+		大人<input type="checkbox" name="cbox" /><br/>
+		小孩<input type="checkbox" name="cbox" /><br/>
+		老人<input type="checkbox" name="cbox" /><br/>
+	文件选择框:
+		 <input type="file" name="myfile" value="" /> <br/>
+	下拉列表：
+		<select id="selId" name="selName">
+			<option value="1">第一</option>
+			<option value="2">第二</option>
+			<option value="3">第三</option>
+			<option value="0" selected="selected">全部</option>
+		</select>      
+	<br/>
+	文本输入域 :<br/>
+		<textarea> 根据cols定义它的列，rows定义文本框的行数</textarea>
+	按钮:
+		<input type="button" name="personal" value="自定义" /> <br/>
+		<input type="reset" name="reset" value="重置" /> <br/>
+	表单按钮：
+		<input type="submit" name="submit" value="提交" /> <br/>
+	</form>
+</body>
+</html>

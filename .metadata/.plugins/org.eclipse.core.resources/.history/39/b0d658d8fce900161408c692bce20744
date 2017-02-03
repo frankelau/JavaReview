@@ -1,0 +1,7 @@
+<html>
+<body>
+
+  用户名: <input type="text" name="name" />
+
+</body>
+</html>
