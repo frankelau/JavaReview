@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>体验JavaScript语言</title>
+<!-- 内部引入 -->
+<script type="text/javascript">
+	window.document.write("hello,world");
+</script>
+<script type="text/javascript">
+	alert("你好！！！");
+	window.alert("你好！！！");
+	document.write("franke------");
+	window.document.write("franke------");
+</script>
+<script type="text/javascript">
+	//代码块 (Java)对代码进行封装 隔离变量的作用域
+	{
+		var a = 100;
+		document.write(a + "</br>");
+	}
+	{
+		document.write(a + "</br>");
+		//JavaScript不会隔离变量作用域
+	}
+</script>
+
+<!-- 外部引入 -->
+<script type="text/javascript" src="../js/my.js"></script>
+</head>
+<body>
+	<h1>体验JavaScript语言</h1>
+	<hr />
+	<span style="color: red;">注意：</span>
+	<ol>
+		<li>页面上可以有多个&lt;script&gt;标签</li>
+		<li>&lt;script&gt;标签按顺序执行</li>
+		<li>&lt;script&gt;标签可以出现在任意的页面位置</li>
+		<li>&lt;script&gt;标签一定要写&lt;/script&gt;关闭，而不能&lt;script/&gt;这样关闭。否则没有任何错误信息，但是没有运行结果。</li>
+	</ol>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>for语句</title>
+
+
+<script type="text/javascript">
+	/* for (sProp in window) {
+		alert(sProp);
+	} */
+</script>
+<script type="text/javascript">
+	with (document) {
+		write("您好 !");
+		write("<br>这个文档的标题是 : \"" + title + "\".");
+		write("<br>这个文档的 URL 是: " + URL);
+		write("<br>现在您不用每次都写出 document 对象的前缀了 !<br/>");
+	}
+
+	with (document) {
+		for (var i = 0; i < 5; i++) {
+			for (var j = 0; j < 5; j++) {
+				write("*");
+			}
+			write("<br/>");
+		}
+	}
+	with (document) {
+		for (var i = 0; i < 5; i++) {
+			for (var j = 0; j <= i; j++) {
+				write("*");
+			}
+			write("<br/>");
+		}
+	}
+	function sayHi(sName, sMessage) {
+		alert("Hello " + sName + sMessage);
+	}
+</script>
+
+</head>
+<body>
+	<hr />
+	<pre>
+		for 语句是严格的迭代语句，用于枚举对象的属性或者遍历一个数组的元素。
+		它的语法如下：
+			for (property in expression) statement
+		例子：
+			for (sProp in window) {
+			  alert(sProp);
+			}
+		这里，for-in 语句用于显示 window 对象的所有属性
+	</pre>
+	<hr />
+
+
+	<pre>
+		with语句的作用： 有了 With 语句，在存取对象属性和方法时就不用重复指定参考对象。
+		格式 ：
+			with(obj){
+				操作obj的属性语句;
+			}
+	</pre>
+	<pre>
+	注释：如果函数无明确的返回值，或调用了没有参数的 return 语句，那么它真正返回的值是 undefined。
+	</pre>
+</body>
+<script type="text/javascript">
+	sayHi("liuzhao",",nice to meet you!");
+	function sum(){
+		var summary = 0;
+		for(var i=0;i<arguments.length;i++){
+			summary += arguments[i];
+		}
+		return summary;
+	}
+	alert(sum(1));
+	alert(sum(1,2));
+	alert(sum(1,2,3));
+	alert(sum(1,2,3,4));
+</script>
+</html>

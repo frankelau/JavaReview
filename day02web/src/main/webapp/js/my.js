@@ -1,0 +1,1 @@
+window.document.write('世界，你好');

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+li {
+	color: red;
+}
+</style>
+<script type="text/javascript">
+	/* var num = parseInt("1234abc");
+	document.write(num); //1234
+	
+	var num1 = parseInt("12345red");
+	//返回 12345
+	var num2 = parseInt("0xA");
+	//返回 10
+	var num3 = parseInt("56.9");
+	//返回 56
+	var num4 = parseInt("red");
+	//返回 NaN
+	document.write(num1 + "<br/>");
+	document.write(num2 + "<br/>");
+	document.write(num3 + "<br/>");
+	document.write(num4 + "<br/>");
+	alert(parseFloat("123")); // 可以
+	alert(parseFloat("123.53")); // 可以
+	alert(parseFloat("012")); // 12
+	alert(parseFloat("000012"));  // 12
+	alert(parseFloat("0x20")); // 结果为0
+	alert(parseFloat("-59")); // 负数
+	alert(parseFloat("abc123")); // NaN (Not a Number)，表示不是一个数字。
+	alert(parseFloat("123ab2c")); // 结果是123，即会解析前面正确的数字，直到遇到不正确的数字。
+	//判断是否是一个有效的数值isNaN true非数值  false数值.
+	document.write(isNaN("abc")+"<br/>"); //true
+	document.write(isNaN("123")+"<br/>"); //false */
+
+	/* 	var result = 5 + 5;	//两个数字
+	 alert(result);		//输出 "10"
+	 var result2 = 5 + "5";	//一个数字和一个字符串
+	 alert(result2);		//输出 "55"
+	 //注意:
+	 var a = 5;
+	 var b = true;
+	 alert(a + b);
+	 //6
+
+	 //注意：变量是布尔类型的时候，true=1, false=0;
+	 var a = 5;
+	 var b = false;
+	 alert(a + b);//5
+	
+	
+	 alert(1*5);
+	 alert(2/1);
+	 alert(2/0); */
+
+	//比较运算符小于、大于、小于等于和大于等于执行的是两个数的比较运算
+	var bResult1 = 2 > 1 //true
+	var bResult2 = 2 < 1 //false
+
+	//比较数字和字符串
+	var bResult = "25" < "3";
+	alert(bResult); //输出 "true"
+	//上面这段代码比较的是字符串 "25" 和 "3"。两个字符串在比较的时候 比较的是两个字符串 对应的字符顺序.
+	//注意： 如果字符串与数字比较，会把字符串转成数字再进行比较。
+	//如果把某个运算数改为数字，那么结果就不一样了：
+	var bResult = "25" < 3;
+	alert(bResult); //输出 "false"
+
+	//这里，字符串 "25" 将被转换成数字 25，然后与数字 3 进行比较，结果不出所料。
+
+	//无论何时比较一个数字和一个字符串，ECMAScript 都会把字符串转换成数字，然后按照数字顺序比较它们。
+	var bTrue = true;
+	var bResult = (bTrue && bUnknown); //发生错误
+	alert(bResult);
+</script>
+</head>
+<body>
+	<ol>
+		<li>ECMAScript 提供了两种把非数字的原始值转换成数字的方法，即 parseInt() 和
+			parseFloat()。只有对 String 类型调用这些方法，它们才能正确运行；对其他类型返回的都是 NaN。</li>
+
+		<li>字符串中包含的数字字面量会被正确转换为数字，比如 "0xA" 会被正确转换为数字 10。不过，字符串 "22.5"
+			将被转换成 22，因为对于整数来说，小数点是无效字符。</li>
+	</ol>
+</body>
+</html>

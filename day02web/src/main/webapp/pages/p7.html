@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>基本数据类型包装类Number</title>
+<script type="text/javascript">
+	//创建number对象
+	var a = 12;
+	var b = new Number(12);
+	document.write(a + ":" + b);
+	//比较数值true
+	document.write(a == b);
+	//没有转型false
+	document.write(a === b);
+	//false
+	document.write(new Number(12) == new Number(12));
+	//false
+	document.write(new Number(12) === new Number(12));
+	//true
+	document.write(new Number(12).valueOf() == new Number(12).valueOf());
+	//true
+	document.write(new Number(12).valueOf() === new Number(12).valueOf());
+
+	//属性:
+	document.write("最大值" + Number.MAX_VALUE + "</br>");
+	document.write("最小值" + Number.MIN_VALUE + "</br>");
+
+	//方法
+	document.write(new Number(12).toString(10) + "<br/>");//10进制
+	document.write(new Number(12).toString(2) + "<br/>");//2进制
+	document.write(new Number(12).toString(8) + "<br/>");//8进制
+	document.write(new Number(12).toString(16) + "<br/>");//16进制
+	document.write(new Number(12.12345) + "<br/>");
+	document.write(new Number(12.12345).toFixed() + "<br/>");//不保留小数
+	document.write(new Number(12.12345).toFixed(2) + "<br/>");
+	document.write(new Number(12.12345).toFixed(3) + "<br/>");
+	document.write(new Number(12.12345).toFixed(4) + "<br/>");
+	//备注：toFixed()是指定小数位数。
+</script>
+</head>
+<body>
+
+</body>
+</html>

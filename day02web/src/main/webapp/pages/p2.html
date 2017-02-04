@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var a = 12;
+	var b = 010; //八进制 10
+	var c = 0x12; //十六进制 18
+	document.write(a + "<br/>");
+	document.write(b + "<br/>");
+	document.write(c + "<br/>");
+	var d = 09; //无效的八进制
+	document.write(d + "<br/>");
+	var e = 3.14;//浮点数
+	var f = 1.//合法，小数点后面没有数字，解析为1
+	var g = 10.0//整数，解析为10。
+	document.write(e + "<br/>");
+	document.write(f + "<br/>");
+	document.write(g + "<br/>");
+</script>
+</head>
+<body>
+	<span style="color: red;">由于保存浮点数需要的内存空间是保存正数值的两倍，因此ECMAScrip会将浮点数值转换为整数值。如果小数点后没有跟任何数字和浮点数本身就是一个整数就会被转换为整数。</span>
+</body>
+</html>
