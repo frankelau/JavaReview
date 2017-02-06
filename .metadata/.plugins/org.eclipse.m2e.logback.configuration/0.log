@@ -5594,3 +5594,335 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact junit:junit:p
 2017-02-04 18:48:57,200 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-02-04 18:48:57,200 [Worker-210] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
 2017-02-04 18:48:57,200 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day02web\src\test\resources
+2017-02-06 11:05:41,336 [Worker-247] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' D:\github\JavaReview\day03web\pom.xml
+2017-02-06 11:05:41,445 [Worker-247] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:05:41,773 [Worker-247] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /day03web/src/main/java
+2017-02-06 11:05:41,788 [Worker-247] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /day03web/src/main/resources
+2017-02-06 11:05:41,788 [Worker-247] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /day03web/src/test/java
+2017-02-06 11:05:44,222 [Worker-247] ERROR o.e.m.w.jsf.internal.utils.JSFUtils - An error occurred trying to find javax.faces.webapp.FacesServlet :
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_111]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_111]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_111]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_111]
+	at java.io.BufferedInputStream.fill(Unknown Source) ~[na:1.8.0_111]
+	at java.io.BufferedInputStream.read1(Unknown Source) ~[na:1.8.0_111]
+	at java.io.BufferedInputStream.read(Unknown Source) ~[na:1.8.0_111]
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source) ~[na:1.8.0_111]
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source) ~[na:1.8.0_111]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:1.8.0_111]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:1.8.0_111]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source) ~[na:1.8.0_111]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.startEntity(Unknown Source) ~[na:1.8.0_111]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.startDTDEntity(Unknown Source) ~[na:1.8.0_111]
+	at com.sun.org.apache.xerces.internal.impl.XMLDTDScannerImpl.setInputSource(Unknown Source) ~[na:1.8.0_111]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(Unknown Source) ~[na:1.8.0_111]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(Unknown Source) ~[na:1.8.0_111]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(Unknown Source) ~[na:1.8.0_111]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source) ~[na:1.8.0_111]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source) ~[na:1.8.0_111]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source) ~[na:1.8.0_111]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source) ~[na:1.8.0_111]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source) ~[na:1.8.0_111]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source) ~[na:1.8.0_111]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source) ~[na:1.8.0_111]
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source) ~[na:1.8.0_111]
+	at org.eclipse.m2e.wtp.jsf.internal.utils.JSFUtils.hasFacesServlet(JSFUtils.java:139) [org.eclipse.m2e.wtp.jsf_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.wtp.jsf.internal.utils.JSFUtils.hasFacesServlet(JSFUtils.java:115) [org.eclipse.m2e.wtp.jsf_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.wtp.jsf.internal.configurators.WebXmlJSFFacetDetector.hasFacesServletInWebXml(WebXmlJSFFacetDetector.java:80) [org.eclipse.m2e.wtp.jsf_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.wtp.jsf.internal.configurators.WebXmlJSFFacetDetector.findFacetVersion(WebXmlJSFFacetDetector.java:55) [org.eclipse.m2e.wtp.jsf_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.wtp.facets.FacetDetectorManager.findFacetVersion(FacetDetectorManager.java:91) [org.eclipse.m2e.wtp_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.wtp.facets.FacetDetectorManager.findFacetVersion(FacetDetectorManager.java:61) [org.eclipse.m2e.wtp_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.wtp.jsf.internal.configurators.JSFProjectConfigurator.configureInternal(JSFProjectConfigurator.java:93) [org.eclipse.m2e.wtp.jsf_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.wtp.jsf.internal.configurators.JSFProjectConfigurator.configure(JSFProjectConfigurator.java:68) [org.eclipse.m2e.wtp.jsf_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:120) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:501) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:494) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.configureNewMavenProjects(ProjectConfigurationManager.java:281) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$1.call(ProjectConfigurationManager.java:168) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$1.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.importProjects(ProjectConfigurationManager.java:136) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.createArchetypeProjects0(ProjectConfigurationManager.java:830) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$5.call(ProjectConfigurationManager.java:760) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$5.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.createArchetypeProjects(ProjectConfigurationManager.java:758) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizard$5.doCreateMavenProjects(MavenProjectWizard.java:243) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectJob$1.doCreateMavenProjects(AbstractCreateMavenProjectJob.java:50) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectsOperation.run(AbstractCreateMavenProjectsOperation.java:62) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectJob.runInWorkspace(AbstractCreateMavenProjectJob.java:54) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-02-06 11:05:44,971 [Worker-247] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 3 sec
+2017-02-06 11:05:45,374 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:05:45,375 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:05:45,376 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:05:45,377 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:06:33,134 [Worker-258] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:06:33,150 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:06:33,150 [Worker-258] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:06:33,150 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:06:48,360 [Worker-258] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:06:48,376 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:06:48,376 [Worker-258] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:06:48,376 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:07:10,420 [Worker-263] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:07:10,421 [Worker-263] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:07:10,422 [Worker-263] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:07:10,422 [Worker-263] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:07:15,865 [Worker-258] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:07:15,865 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:07:15,865 [Worker-258] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:07:15,865 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:07:40,373 [Worker-260] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:07:40,373 [Worker-260] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:07:40,373 [Worker-260] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:07:40,373 [Worker-260] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:07:41,528 [Worker-254] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:07:41,528 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:07:41,528 [Worker-254] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:07:41,528 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:08:05,307 [Worker-260] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:08:05,556 [Worker-260] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:08:05,556 [Worker-260] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:08:05,556 [Worker-260] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:08:05,556 [Worker-260] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:08:05,556 [Worker-260] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of day03web
+2017-02-06 11:08:05,556 [Worker-260] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for day03web
+2017-02-06 11:08:05,572 [Worker-260] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:08:06,753 [Worker-260] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:08:06,753 [Worker-260] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:08:06,753 [Worker-260] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:08:06,753 [Worker-260] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:08:07,798 [Worker-247] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:08:07,860 [Worker-247] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:08:07,860 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:08:07,860 [Worker-247] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:08:07,860 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:08:07,860 [Worker-247] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of day03web
+2017-02-06 11:08:07,860 [Worker-247] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for day03web
+2017-02-06 11:08:07,876 [Worker-247] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:36:17,614 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:36:17,615 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:36:17,622 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:36:17,624 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:36:31,682 [Worker-271] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:36:31,682 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:36:31,684 [Worker-271] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:36:31,687 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:37:40,030 [Worker-275] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:37:40,031 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:37:40,033 [Worker-275] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:37:40,034 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:38:12,576 [Worker-270] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:38:12,577 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:38:12,578 [Worker-270] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:38:12,578 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:38:34,162 [Worker-270] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:38:34,163 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:38:34,163 [Worker-270] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:38:34,164 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:38:43,520 [Worker-275] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:38:43,521 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:38:43,522 [Worker-275] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:38:43,523 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:38:47,047 [Worker-270] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:38:47,048 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:38:47,049 [Worker-270] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:38:47,049 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:39:04,241 [Worker-270] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:39:04,334 [Worker-270] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of day03web
+2017-02-06 11:39:04,334 [Worker-270] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for day03web
+2017-02-06 11:39:05,551 [Worker-275] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:39:05,606 [Worker-275] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of day03web
+2017-02-06 11:39:05,606 [Worker-275] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for day03web
+2017-02-06 11:39:12,460 [Worker-275] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:39:12,529 [Worker-275] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of day03web
+2017-02-06 11:39:12,529 [Worker-275] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for day03web
+2017-02-06 11:39:19,624 [Worker-278] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:39:19,759 [Worker-278] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of day03web
+2017-02-06 11:39:19,760 [Worker-278] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for day03web
+2017-02-06 11:39:24,798 [Worker-270] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:39:24,858 [Worker-270] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of day03web
+2017-02-06 11:39:24,859 [Worker-270] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for day03web
+2017-02-06 11:39:30,145 [Worker-278] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:39:30,201 [Worker-278] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of day03web
+2017-02-06 11:39:30,201 [Worker-278] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for day03web
+2017-02-06 11:39:44,592 [Worker-277] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:39:44,645 [Worker-277] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of day03web
+2017-02-06 11:39:44,645 [Worker-277] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for day03web
+2017-02-06 11:40:06,297 [Worker-276] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:40:17,542 [Worker-276] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/dom4j/dom4j/1.6.2/dom4j-1.6.2.pom
+2017-02-06 11:40:17,545 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.dom4j:dom4j:jar:1.6.2 is missing, no dependency information available
+2017-02-06 11:40:18,326 [Worker-280] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/dom4j/dom4j/1.6.2/dom4j-1.6.2.pom
+2017-02-06 11:40:18,329 [Worker-280] ERROR o.e.m.c.u.i.actions.OpenPomAction - Could not resolve artifact org.dom4j:dom4j:pom:1.6.2
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.dom4j:dom4j:pom:1.6.2
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.OpenPomAction.openPomEditor(OpenPomAction.java:243) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.OpenPomAction.openEditor(OpenPomAction.java:218) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.editor.xml.PomHyperlinkDetector$6$1.run(PomHyperlinkDetector.java:616) [org.eclipse.m2e.editor.xml_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-02-06 11:40:18,563 [Worker-278] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/dom4j/dom4j/1.6.2/dom4j-1.6.2.pom
+2017-02-06 11:40:18,564 [Worker-278] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.dom4j:dom4j:jar:1.6.2 is missing, no dependency information available
+2017-02-06 11:40:19,487 [Worker-271] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/dom4j/dom4j/1.6.2/dom4j-1.6.2.pom
+2017-02-06 11:40:19,489 [Worker-271] ERROR o.e.m.c.u.i.actions.OpenPomAction - Could not resolve artifact org.dom4j:dom4j:pom:1.6.2
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.dom4j:dom4j:pom:1.6.2
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.OpenPomAction.openPomEditor(OpenPomAction.java:243) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.OpenPomAction.openEditor(OpenPomAction.java:218) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.editor.xml.PomHyperlinkDetector$6$1.run(PomHyperlinkDetector.java:616) [org.eclipse.m2e.editor.xml_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-02-06 11:40:26,017 [Worker-276] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/dom4j/dom4j/1.6.2/dom4j-1.6.2.jar
+2017-02-06 11:40:26,055 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.dom4j:dom4j:jar:1.6.2 is missing, no dependency information available
+2017-02-06 11:40:26,377 [Worker-278] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/dom4j/dom4j/1.6.2/dom4j-1.6.2.jar
+2017-02-06 11:40:26,418 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:40:26,418 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:40:26,420 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:40:26,421 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:40:26,421 [Worker-276] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of day03web
+2017-02-06 11:40:26,421 [Worker-276] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for day03web
+2017-02-06 11:40:26,424 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:40:26,977 [Worker-278] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:40:34,951 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/dom4j/dom4j/1.6.2/dom4j-1.6.2.pom
+2017-02-06 11:40:34,952 [Worker-270] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for dom4j:dom4j:jar:1.6.2 is missing, no dependency information available
+2017-02-06 11:40:35,201 [Worker-278] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/dom4j/dom4j/1.6.2/dom4j-1.6.2.pom
+2017-02-06 11:40:35,202 [Worker-278] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for dom4j:dom4j:jar:1.6.2 is missing, no dependency information available
+2017-02-06 11:40:35,300 [Worker-276] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/dom4j/dom4j/1.6.2/dom4j-1.6.2.pom
+2017-02-06 11:40:35,302 [Worker-276] ERROR o.e.m.c.u.i.actions.OpenPomAction - Could not resolve artifact dom4j:dom4j:pom:1.6.2
+org.eclipse.core.runtime.CoreException: Could not resolve artifact dom4j:dom4j:pom:1.6.2
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.OpenPomAction.openPomEditor(OpenPomAction.java:243) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.OpenPomAction.openEditor(OpenPomAction.java:218) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.editor.xml.PomHyperlinkDetector$6$1.run(PomHyperlinkDetector.java:616) [org.eclipse.m2e.editor.xml_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-02-06 11:40:44,061 [Worker-270] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/dom4j/dom4j/1.6.2/dom4j-1.6.2.jar
+2017-02-06 11:40:44,426 [Worker-278] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/dom4j/dom4j/1.6.2/dom4j-1.6.2.jar
+2017-02-06 11:40:44,435 [Worker-278] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for dom4j:dom4j:jar:1.6.2 is missing, no dependency information available
+2017-02-06 11:40:44,480 [Worker-278] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:40:44,501 [Worker-278] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:40:44,502 [Worker-278] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:40:44,503 [Worker-278] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:40:44,503 [Worker-278] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of day03web
+2017-02-06 11:40:44,503 [Worker-278] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for day03web
+2017-02-06 11:40:44,506 [Worker-278] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:40:44,720 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for dom4j:dom4j:jar:1.6.2 is missing, no dependency information available
+2017-02-06 11:40:44,724 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:40:44,724 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:40:44,726 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:40:44,728 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:41:41,529 [Worker-271] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:41:41,593 [Worker-271] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:41:41,593 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:41:41,594 [Worker-271] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:41:41,594 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:41:41,595 [Worker-271] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of day03web
+2017-02-06 11:41:41,595 [Worker-271] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for day03web
+2017-02-06 11:41:41,597 [Worker-271] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:41:42,905 [Worker-275] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:41:42,907 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:41:42,907 [Worker-275] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:41:42,908 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:42:28,878 [Worker-271] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:42:28,942 [Worker-271] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:42:28,943 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:42:28,943 [Worker-271] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:42:28,944 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:42:28,944 [Worker-271] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of day03web
+2017-02-06 11:42:28,944 [Worker-271] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for day03web
+2017-02-06 11:42:28,946 [Worker-271] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:42:36,652 [Worker-281] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:42:48,582 [Worker-281] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/junit/dom4j/1.6.1/dom4j-1.6.1.pom
+2017-02-06 11:42:48,584 [Worker-281] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.junit:dom4j:jar:1.6.1 is missing, no dependency information available
+2017-02-06 11:42:48,586 [Worker-281] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/junit/dom4j/1.6.1/dom4j-1.6.1.jar
+2017-02-06 11:42:48,599 [Worker-281] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.junit:dom4j:jar:1.6.1 is missing, no dependency information available
+2017-02-06 11:42:48,666 [Worker-276] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/junit/dom4j/1.6.1/dom4j-1.6.1.pom
+2017-02-06 11:42:48,668 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.junit:dom4j:jar:1.6.1 is missing, no dependency information available
+2017-02-06 11:42:49,066 [Worker-277] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:42:59,273 [Worker-275] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/junit/junit/1.6.1/junit-1.6.1.pom
+2017-02-06 11:42:59,275 [Worker-275] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.junit:junit:jar:1.6.1 is missing, no dependency information available
+2017-02-06 11:43:00,615 [Worker-277] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/junit/junit/1.6.1/junit-1.6.1.pom
+2017-02-06 11:43:00,616 [Worker-277] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.junit:junit:jar:1.6.1 is missing, no dependency information available
+2017-02-06 11:43:08,419 [Worker-275] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/junit/junit/1.6.1/junit-1.6.1.jar
+2017-02-06 11:43:09,987 [Worker-277] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/junit/junit/1.6.1/junit-1.6.1.jar
+2017-02-06 11:43:09,999 [Worker-277] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.junit:junit:jar:1.6.1 is missing, no dependency information available
+2017-02-06 11:43:10,215 [Worker-281] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:43:16,709 [Worker-271] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/junit/junit/1.42/junit-1.42.pom
+2017-02-06 11:43:16,711 [Worker-271] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.junit:junit:jar:1.42 is missing, no dependency information available
+2017-02-06 11:43:32,078 [Worker-281] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/junit/junit/1.42/junit-1.42.pom
+2017-02-06 11:43:32,079 [Worker-281] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.junit:junit:jar:1.42 is missing, no dependency information available
+2017-02-06 11:43:32,083 [Worker-281] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/junit/junit/1.42/junit-1.42.jar
+2017-02-06 11:43:32,095 [Worker-281] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.junit:junit:jar:1.42 is missing, no dependency information available
+2017-02-06 11:43:34,096 [Worker-271] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.ds.gome.com.cn/nexus/content/groups/public/org/junit/junit/1.42/junit-1.42.jar
+2017-02-06 11:43:34,305 [Worker-270] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:43:34,366 [Worker-270] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:43:34,366 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:43:34,367 [Worker-270] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:43:34,368 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:43:42,452 [Worker-279] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:43:42,537 [Worker-279] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:43:42,538 [Worker-279] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:43:42,539 [Worker-279] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:43:42,539 [Worker-279] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:43:42,539 [Worker-279] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of day03web
+2017-02-06 11:43:42,540 [Worker-279] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for day03web
+2017-02-06 11:43:42,542 [Worker-279] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:43:43,759 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:43:43,760 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:43:43,762 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:43:43,763 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:43:44,871 [Worker-275] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.com.franke:day03web:0.0.1-SNAPSHOT @ D:\github\JavaReview\day03web\pom.xml.
+2017-02-06 11:43:44,937 [Worker-275] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:43:44,937 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:43:44,938 [Worker-275] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:43:44,939 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:43:44,939 [Worker-275] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of day03web
+2017-02-06 11:43:44,939 [Worker-275] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for day03web
+2017-02-06 11:43:44,941 [Worker-275] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:43:46,141 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:43:46,142 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:43:46,142 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:43:46,143 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:45:56,094 [Worker-277] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:45:56,095 [Worker-277] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:45:56,096 [Worker-277] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:45:56,096 [Worker-277] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:45:58,633 [Worker-271] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:45:58,633 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:45:58,634 [Worker-271] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:45:58,634 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 11:46:06,801 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:46:06,802 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 11:46:06,803 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 11:46:06,803 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
+2017-02-06 12:01:48,542 [Worker-294] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 12:01:48,542 [Worker-294] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-06 12:01:48,543 [Worker-294] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-06 12:01:48,544 [Worker-294] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github\JavaReview\day03web\src\test\resources
