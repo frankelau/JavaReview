@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>自定义对象</title>
+<script type="text/javascript">
+	function Person(name, age) {
+		this.name = name;
+		this.age = age;
+		this.work = function() {
+			alert(this.name + ":" + this.age);
+		}
+	}
+
+	var person = new Person("jack", 28);
+	person.work();
+</script>
+</head>
+<body>
+
+</body>
+</html>

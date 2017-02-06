@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>数组</title>
+<script type="text/javascript">
+	/* //数组的声明和初始化,注意:数组的长度取决于整数下标的个数
+	var arr = new Array();
+	arr[0] = "aa";
+	2
+	arr[1] = "bb";
+	arr[6] = 'xx';
+	document.write(arr + "<br/>");
+	//遍历数组
+	for (var i = 0; i < arr.length; i++) {
+		document.write(arr[i] + "<br/>");
+	}
+	//下标越界时：
+	var arr = [ "aa", "bb" ];
+	document.write(arr[200]);
+	// 显示undefined
+ */
+	var a = [ 1, 2, 3 ];
+	document.write(a.sort()+"<br/>");//1,2,3
+	document.write(a.reverse()+"<br/>");//3,2,1
+	document.write(a.push(4,5,[6,7])+"<br/>");//返回数组元素个数：6，此时a为3,2,1,4,5,6,7
+
+	document.write(a.pop() + "<br/>");//删除并返回数组的最后一个元素6,7,此时a为3,2,1,4,5
+	document.write(a.shift() + "<br/>");//删除并返回数组的第一个元素3,此时a为2,1,4,5
+	document.write(a.unshift(3) + "<br/>");//将指定的元素插入数组开始位置并返回该数组个数5，此时a为3,2,1,4,5
+	
+	document.write(a.splice(1,1,1000) + "<br/>");//移除从 start 位置开始的指定个数的元素，并插入新元素，从而修改,返回删除元素2，此时a为：3,1000,1,4,5
+	document.write(a.slice(1,2) + "<br/>");//返回一个包含了指定的部分元素的数组。将返回索引大于等于start且小于end的一段。原数组不变。
+
+	// 	连接两个或更多的数组，并返回结果。原数组不变
+	document.write(a.concat([ 100, 30 ]) + "<br/>");
+	document.write(a.concat([ 100, 30 ], [ 60, 90 ]) + "<br/>");
+	// 	把数组的所有元素放入一个字符串。元素通过指定的分隔符进行分隔。
+	var b = a.join("$");
+	document.write(b + "<br/>");
+	document.write(typeof b + "<br/>");
+	//string
+	
+	// 	向数组的末尾添加一个或更多元素，并返回新的长度。
+	document.write(a.push(99, 78) + "<br/>");
+	// 	把数组转换为字符串，并返回结果。
+	document.write(a.toString() + "<br/>");
+	// 返回数组对象的原始值
+	var c = a.valueOf();
+	document.write(typeof c + "<br/>");
+	
+	
+	var a = [100, 9, 20, 3, 7, 96];
+	document.write(a + "<br/>");
+	//如果调用该方法时没有使用参数，将按字母顺序对数组中的元素进行排序
+	a.sort();
+	document.write(a + "<br/>");
+	//指定比较方式
+	a.sort(compareTo);
+	document.write(a + "<br/>");
+	function compareTo(a, b) {
+		return b - a;
+	}
+
+</script>
+</head>
+<body>
+</body>
+</html>

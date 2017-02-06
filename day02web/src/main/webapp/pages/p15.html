@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>自定义对象</title>
+<script type="text/javascript">
+	/*
+	 * 自定义对象Object方式
+	 *
+	 *  */
+	var person = new Object();
+	person.name = "jack";
+	person.age = 28;
+	person.sayHello = function() {
+		document.write(this.name + ":" + this.age);
+	}
+	person.sayHello();
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+	//年份： 1900年 到今天
+	function showYears() {
+		var yearNode = document.getElementById("year");
+		var myDate = new Date();
+		var nowdate = myDate.getFullYear();
+		
+		for (var i = 1899; i <= nowdate; i++) {
+			var option = document.createElement("option");
+			if(i==1899){
+				option.innerHTML = '年份';
+				option.value = "0";
+			}else{
+				option.innerHTML = i;
+				option.value = i;;
+			}
+			yearNode.appendChild(option);
+		}
+	}
+	//月份： 1~12
+	function showMonths() {
+		var monthNode = document.getElementById("month");
+		for (var i = 1; i <= 12; i++) {
+			var option = document.createElement("option");
+			option.innerHTML = i;
+			monthNode.appendChild(option);
+		}
+	}
+	//日： 根据每月算出对应的天数（包含有闰年）
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body onload="showYears()">
+	年
+	<select id="year" onchange="showMonths()"></select>月
+	<select id="month"></select>日
+	<select></select>
+</body>
+</html>

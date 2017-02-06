@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>自定义对象</title>
+<script type="text/javascript">
+	/*
+	 * 自定义对象
+	 *
+	 *  */
+	function Person() {
+		window.document.write("constructor()<br>");
+	}
+
+	var person = new Person();
+	//定义属性
+	person.name = "jack";
+	person.age = 23;
+	//定义方法
+	person.work = function() {
+		window.document.write("person working...<br/>");
+	};
+	//获取构造函数
+	window.document.write(person.constructor + "<br/>");
+
+	window.document.write(person.name + "," + person.age + "<br/>");
+	person.work();
+</script>
+</head>
+<body>
+
+</body>
+</html>
