@@ -56,6 +56,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\github\JavaReview\day03web"/>
 			<item value="D:\github\JavaReview\"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -74,6 +75,8 @@
 			<item value="cn.com.franke"/>
 		</list>
 		<list key="artifactId">
+			<item value="day04web"/>
+			<item value="day02"/>
 			<item value="day03web"/>
 			<item value="day01web"/>
 		</list>
